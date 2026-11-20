@@ -25,7 +25,7 @@
 @font-face{font-family:"IBM Plex Mono";font-style:normal;font-weight:400;font-display:swap;src:url(/assets/fonts/ibm-plex-mono-latin-400-normal.woff2) format("woff2")}
 
 :root{
-  --ground:#FBFAF8; --ink:#16110F; --ink-2:#4A423E; --muted:#736A65; --rule:#E2DBD5;
+  --ground:#FBFAF8; --ink:#16110F; --ink-2:#4A423E; --muted:#736A65; --rule:#E2DBD5; --stone:#EFEBE6;
   --sans:"IBM Plex Sans",system-ui,sans-serif; --mono:"IBM Plex Mono",ui-monospace,monospace;
   --gutter:48px; --section:128px;
 }
@@ -74,9 +74,9 @@ a:focus-visible{outline:2px solid var(--ink);outline-offset:4px}
 .experience strong{font-weight:600}
 
 /* Footer */
-.site-footer{border-top:1px solid var(--rule)}
-.site-footer .wrap{padding-top:32px;padding-bottom:32px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px;font-family:var(--mono);font-size:13px;line-height:1.6;color:var(--muted)}
-.site-footer .sep{margin:0 .5em}
+.site-footer{background:var(--stone)}
+.site-footer .wrap{padding-top:24px;padding-bottom:24px;display:flex;justify-content:space-between;align-items:baseline;gap:8px 16px;font-size:13px;line-height:1.5;color:var(--ink-2)}
+.site-footer a{text-underline-offset:3px}
 
 /* Tablet */
 @media (max-width:1024px){
@@ -102,10 +102,7 @@ a:focus-visible{outline:2px solid var(--ink);outline-offset:4px}
   .area .num{margin-bottom:16px}
   .area p{margin-top:8px;font-size:17px}
   .experience{font-size:20px}
-  .site-footer .wrap{flex-wrap:nowrap;align-items:flex-start;gap:16px}
-  .site-footer .company{display:block}
-  .site-footer .sep-mail{display:none}
-  .site-footer .company a{display:block;width:max-content;margin-top:8px}
+  .site-footer .wrap{flex-direction:column;gap:8px}
 }
 </style>
 </head>
@@ -173,8 +170,8 @@ a:focus-visible{outline:2px solid var(--ink);outline-offset:4px}
 
 <footer class="site-footer">
   <div class="wrap">
-    <span class="company"><span>Unchained Oy</span><span class="sep">·</span><span>3130913-1</span><span class="sep sep-mail">·</span><a href="mailto:sebastian@juhola.org">sebastian@juhola.org</a></span>
-    <span>© 2026</span>
+    <p>Email me: <a href="mailto:sebastian@juhola.org">sebastian@juhola.org</a></p>
+    <p>Copyright © 2026 Unchained Inc. All rights reserved.</p>
   </div>
 </footer>
 
