@@ -102,9 +102,10 @@ a:focus-visible{outline:2px solid var(--ink);outline-offset:4px}
   .area .num{margin-bottom:16px}
   .area p{margin-top:8px;font-size:17px}
   .experience{font-size:20px}
-  .site-footer .wrap{flex-direction:column;gap:8px}
-  .site-footer .company{display:flex;flex-direction:column;gap:8px}
-  .site-footer .sep{display:none}
+  .site-footer .wrap{flex-wrap:nowrap;align-items:flex-start;gap:16px}
+  .site-footer .company{display:block}
+  .site-footer .sep-mail{display:none}
+  .site-footer .company a{display:block;width:max-content;margin-top:8px}
 }
 </style>
 </head>
@@ -172,7 +173,7 @@ a:focus-visible{outline:2px solid var(--ink);outline-offset:4px}
 
 <footer class="site-footer">
   <div class="wrap">
-    <span class="company"><span>Unchained Oy</span><span class="sep">·</span><span>3130913-1</span><span class="sep">·</span><a href="mailto:sebastian@juhola.org">sebastian@juhola.org</a></span>
+    <span class="company"><span>Unchained Oy</span><span class="sep">·</span><span>3130913-1</span><span class="sep sep-mail">·</span><a href="mailto:sebastian@juhola.org">sebastian@juhola.org</a></span>
     <span>© 2026</span>
   </div>
 </footer>
